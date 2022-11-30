@@ -1,3 +1,6 @@
+##   Lina Vargas Vega 
+### Análisis pieza periodismo de datos El País 
+
 Elegí la pieza de periodismo de datos de El País denominada ‘El empleo reflota en octubre: el paro baja en 27.000 personas, la mayor caída en este mes de la historia’ (https://elpais.com/economia/2022-10-04/el-mercado-laboral-se-enfria-en-septiembre-el-paro-sube-en-18000-personas-con-el-fin-de-los-contratos-de-verano.html). Un texto multimedia en el que el periodico español explica el panorama del empleo en el país europeo en el décimo mes del año. 
 
 El País usa tres infografías interactivas para desglosar diferentes datos en relación al mismo tema y las distribuye a lo largo del texto. El primer gráfico es un histórico de los desempleados del país desde enero de 2008 hasta octubre de 2022 con información tomada del Ministerio del Trabajo.
