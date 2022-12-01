@@ -1,7 +1,7 @@
 # Uso de la API Covid con Pandas - AD4 
 ## Lina Vargas Vega 
 <br>
-Máster periodismo digital y de datos - Versión [Phyton](docs/ad4.ipynb)
+Máster periodismo digital y de datos
 <br>
 
 Mi url https://api.covid19api.com/countries
