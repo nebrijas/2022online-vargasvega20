@@ -40,7 +40,7 @@ if (req.status_code != 200):
 
 ## BeautifulSoup
 
-Esta libereía nos ayudará a trae, pulir y organizar en una lista los archivos HTML que le indiquemos de la web de El País, en este caso. Con  la ayuda de la función findAll de esta librería traeremos todos los h2 -pues así El País denomina sus titulares- a este documento.
+Esta libereía nos ayudará a traer, pulir y organizar en una lista los archivos HTML que le indiquemos de la web de El País, en este caso. Con  la ayuda de la función findAll de esta librería traeremos todos los h2 -pues así El País denomina sus titulares- a este documento.
 
 
 ```python
