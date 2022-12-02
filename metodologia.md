@@ -25,7 +25,11 @@ Algunos de los gráficos en este reportaje son más complejos que otros. Me llam
 
 ## [AD3](ad3.md)
 
-Acá ya entramos un poco más en materia. Para iniciar la AD3 fue necesario descargar Anaconda, un software de procesamiento de datos en diferentes lengujaes de programación. Una vez se instaló [correctamente](https://docs.anaconda.com/anaconda/install/windows/) la plataforma, pudimos acceder desde allí a Jupyter, una aplicación web que permite generar cuadernos de Python y Markdown
+Acá ya entramos un poco más en materia. Para iniciar la AD3 fue necesario descargar Anaconda, un software de procesamiento de datos en diferentes lengujaes de programación. Una vez se instaló [correctamente](https://docs.anaconda.com/anaconda/install/windows/) la plataforma, pudimos acceder desde allí a Jupyter, una aplicación web que permite generar cuadernos de Python y Markdown. Otro nuevo reto: aprender a manejar Jupyter, sin embargo con el previo conocimiento de GitHub y un repaso por el lenguaje de Python, fue más sencilla la familiarización. 
+
+En esta primera actividad en Jupyter hicimos un scraping de una web, en este caso, de **El País**. El resultado mejor pocisionado de est término -[Wikipedia](https://es.wikipedia.org/wiki/Web_scraping)- define esta actividad como "una técnica utilizada mediante programas de software para extraer información de sitios web". Muy útil para la investigación de un tema en concreto pues funciona a través de los tags con los que se identifican las noticias. 
+
+El proceso fue más sencillo de lo que suena. Primero es necesario importar algunas librerías que nos ayudarán a ejcutar el trabajo. Después hay que crear 
 
 
 ## [AD4](ad4.md)
