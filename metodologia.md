@@ -119,8 +119,15 @@ miurl = "https://api.covid19api.com/countries"
 
 ### Tercer paso 
 
+Ya tenemos la herramienta que nos ayudará a ejecutar la actividad y los datos que vamos a trabajar, ahora necesitamos el espacio donde vamos a alojar la información: un dataframe (df) que es literalmente un marco de datos para encerrar, organizar y eventualmente ilustrar nuestra información. Le indicaremos a ese dataframe que debe leer json, que es el lenguaje en el que están los datos que vamos a usar.
+
+```python
+df = pd.read_json (miurl)
+```
 
 ### Cuarto paso 
+
+Este paso a podría pasa
 
 
 ### Quinto paso 
