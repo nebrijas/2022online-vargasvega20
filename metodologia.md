@@ -127,8 +127,7 @@ df = pd.read_json (miurl)
 
 ### Cuarto paso 
 
-Este paso a podría pasa
-
+Tecnicamente este paso no suma mucho al resultado final, pero es indispensable y no debe ser pasado por alto. Una vez tenemos los datos alojados en un dataframe podemos jugar con ellos, conocerlos, explorarlos. Esto será importante para saber que no hay ningún dato fuera del grupo correspondiente o "dañado", también nos permite conocer nueva información de la data y saber qué hay y con qué podemos trabajar. Se pueden conocer los primeros datos, los últimos o alguno en concreto. Para conocer cómo se puede explorar esta información, visitar la [AD4](ad4.md).
 
 ### Quinto paso 
 
