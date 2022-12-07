@@ -1,8 +1,8 @@
 # Uso de la API Covid con Pandas - AD4 
 ## Lina Vargas Vega 
-<br>
+
 Máster periodismo digital y de datos
-<br>
+
 
 Mi url https://api.covid19api.com/countries
 
@@ -21,7 +21,7 @@ Es probable que al descargar Anaconda la libería Pandas ya estuviera incluida, 
     Requirement already satisfied: six>=1.5 in c:\users\usuario\anaconda3\lib\site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
     
 
-## Configurar Panda 
+## Configurar pandas  
 Con esta indicación podremos referinos a Pandas como pd en todo el documento 
 
 
@@ -30,7 +30,7 @@ import pandas as pd
 ```
 
 ## Traer la API Covid al documento 
-Para que Pandas identifique los datos que vamos a tratar, vamos a crear una variable denominada 'miurl' que representará el link de la API 
+Para que pandas identifique los datos que vamos a tratar, vamos a crear una variable denominada 'miurl' que representará el link de la API 
 
 
 ```python
@@ -59,7 +59,7 @@ Un dataframe (df) es literalmente un marco de datos y servirá para encerrar, or
 df = pd.read_json (miurl)
 ```
 
-Corremos una pequeña prueba para comprobar que todo salió correcto. Al traer df a Pandas, se muestra el conjunto de datos entero.
+Corremos una pequeña prueba para comprobar que todo salió correcto. Al traer df a pandas, se muestra el conjunto de datos entero.
 
 
 ```python
