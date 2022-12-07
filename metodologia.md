@@ -131,5 +131,54 @@ Tecnicamente este paso no suma mucho al resultado final, pero es indispensable y
 
 ### Quinto paso 
 
+En este paso ya se puede crear el gráfico. Lo primero es elegir los datos que vamos a usar, en este caso la fecha y el número de casos, siempre deben ser los más relevantes y los que por lógica arrojen un resultado demostrativo en el gráfico. Vamos a ubicar la fecha como la columna de control usando la función set_index() para reemplazar a la columna que Pandas ubicó allí por defecto.
+
+```python
+df_col.set_index('Date')
+```
+
+Después añadimos el otro dato del gráfico con corchetes 
+
+```python
+df_col.set_index('Date')['Cases']
+```
+
+El último paso para el gráfico consiste en darle a nuestros dos ejes seleccionados la función plot para que se ilustren. 
+
+
+```python
+df_col.set_index('Date')['Cases'].plot()
+```
+
+
+
+
+    <AxesSubplot:xlabel='Date'>
+
+
+
+
+    
+![png](output_38_1.png)
+    
+
+
+El último paso es titular nuestro gráfico con title=. 
+
+```python
+df_col.set_index('Date')['Cases'].plot(title= "Casos de Covid19 en Colombia")
+```
+
+
+
+
+    <AxesSubplot:title={'center':'Casos de Covid19 en Colombia'}, xlabel='Date'>
+
+
+
+
+    
+![png](output_40_1.png)
+    
 
 ## Conclusiones 
