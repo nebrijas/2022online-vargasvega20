@@ -73,7 +73,7 @@ soup = BeautifulSoup(req.text, 'html.parser')
 tags = soup.findAll("h2")
 ```
 
-## Quinto paso 
+### Quinto paso 
 
 Este es el paso final. Daremos la instrucción de que por cada h2 nos devuelva el texto, al ejecutar la acción tendremos la lista de resultados. Resultados disponibles en la [AD3](ad3.md). 
 
@@ -88,11 +88,42 @@ Se repitió el mismo proceso con la seeción de 'Internacional', 'Economía' y '
 
 ## [AD4](ad4.md)
 
-Desde mi punto de vista esta fue la actividad más interesante, también la más desafiante, pero la de mejores resultados. Para llevar a cabo este ejercicio usamos una API o una Interfaz de "Programación de Aplicaciones", en este caso la [API del Covid](https://covid19api.com/). Este trabajo lo hicimos a través de la librería Pandas, por eso el primer paso era instalarla y configurarla como pd para poderla llamar así el resto del documento. También se creo la variable miurl que sirvió para que Pandas identificara de dónde provenían los datos.
+Desde mi punto de vista esta fue la actividad más interesante, también la más desafiante, pero la de mejores resultados. Para llevar a cabo este ejercicio usamos una API o una Interfaz de "Programación de Aplicaciones", en este caso la [API del Covid](https://covid19api.com/). Este trabajo lo hicimos a través de la librería Pandas.
 
-Una vez con la API identificada ya se podía manipular los datos. El primer paso fue pedirle a Pandas que leyera json,el formato en el que esta la data de la API. Esos datos se leerían con un dataframe (que se denominó df), con ese df pudimos empezar a explorar los datos, ver los que estaban al principio (head), al final (tail), uno en concreto (10). Es posible conocer más detalles de la data con la función info, que también nos permite verificar que los datos pertenecen al grupo y se pueden localizar. 
+### Primer paso 
 
-Finalmente, para elaborar un gráfico, objetivo principal de esta actividad, seleccionamos los ejes para trabajar, aquellos datos relevantes que sirvieran realmente para la ilustración, en este caso la fecha y el número de casos. Gracias al código df_XX.set_index('columna1')['columna2'] es posible ubicar los datos en el eje X y Y para luego ilustrarlo con plot, el gráfico también se puede nombrar con la función title. Repliqué este mismo procedimiento con la data de Colombia, España. República Dominicana y Ecuador. 
+Teniendo en cuenta que Pandas es la herramienta que nos ayudará a ejecutar este ejercicio, lo primero es importarla. Ya que estamos trabajando en Anaconda, podemos usar !conda para invocarla, si estamos desde otra plataforma, lo correcto será usar !pip. 
+
+```python
+!pip install pandas
+```
+
+    Requirement already satisfied: pandas in c:\users\usuario\anaconda3\lib\site-packages (1.4.4)
+    Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\usuario\anaconda3\lib\site-packages (from pandas) (2.8.2)
+    Requirement already satisfied: pytz>=2020.1 in c:\users\usuario\anaconda3\lib\site-packages (from pandas) (2022.1)
+    Requirement already satisfied: numpy>=1.18.5 in c:\users\usuario\anaconda3\lib\site-packages (from pandas) (1.21.5)
+    Requirement already satisfied: six>=1.5 in c:\users\usuario\anaconda3\lib\site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+
+### Segundo paso 
+
+Ahora es necesario configurar Pandas, la vamos a importar como pd, para poder usarla nombrando esta abreviatura de ahora en adelante. 
+
+```python
+import pandas as pd 
+```
+También es importante decirle con qué datos vamos a trabajar. Vamos a crear una variable que vamos a denominar miurl, esta variable tendrá el valor del link donde están alojados los datos de la [API Covid 19](https://api.covid19api.com/countries)
+
+```python
+miurl = "https://api.covid19api.com/countries"
+```
+
+### Tercer paso 
+
+
+### Cuarto paso 
+
+
+### Quinto paso 
 
 
 ## Conclusiones 
