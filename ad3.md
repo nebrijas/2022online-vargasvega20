@@ -1,8 +1,7 @@
 # Scraping de una web - AD3
 ## Lina Vargas Vega 
-<br>
+
 Máster periodismo digital y de datos 
-<br>
 
 ## Importar librerías 
 
@@ -18,6 +17,28 @@ import pandas as pd
 from termcolor import colored
 ```
 
+### Explicación de las librerías 
+
+**Módulos o librerías propias de Python**
+
+[time](https://docs.python.org/es/3/library/time.html): Este módulo proporciona varias funciones relacionadas con el tiempo. 
+
+[csv](https://docs.python.org/es/3/library/csv.html?highlight=csv:) El módulo ```csv``` implementa clases para leer y escribir datos tabulares en formato CSV (Valores Separados por Comas). Es uno de los formtos más populares para la organización de datos.
+
+[re](https://docs.python.org/es/3/library/re.html?highlight=re#module-re) Este módulo proporciona operaciones de coincidencia de expresiones regulares similares a las encontradas en Perl.
+
+[os](https://docs.python.org/es/3/library/os.html?highlight=#module-os): Este módulo provee una manera versátil de usar funcionalidades dependientes del sistema operativo.
+
+**Módulos o librerías externas a Python**
+
+[bs4](tps://pypi.org/project/beautifulsoup4/):Beautiful Soup es una biblioteca que facilita extraer información de páginas web. Se basa en un analizador HTML o XML.
+
+[pandas](https://pandas.pydata.org/): pandas es una herramienta de análisis y manipulación de datos de código abierto rápida, flexible y fácil de usar. Está construida sobre el lenguaje de programación Python.
+
+[termcolor](https://pypi.org/project/termcolor/): Formato de color ANSI (Instituto Nacional de Normalización Estadounidense por sus siglas en inglés) para salida en terminal.
+
+[requests](https://pypi.org/project/requests/) Solicitudes le permite enviar solicitudes HTTP/1.1 con mucha facilidad. No es necesario agregar manualmente cadenas de consulta a sus URL, o codificar sus datos PUT & POST.
+
 ## Variables 
 Vamos a crear una variable tipo lista ([]) para organizar los resultados de nuestra búsqueda. En este caso la llamaremos 'resultados'
 
@@ -27,9 +48,7 @@ resultados = []
 ```
 
 ## ¿De dónde vendrán los resultados?
-Ahora, es momento de decirle a jupyter de dónde obtendrá los resultados que buscamos. Esto lo hacemos con la librería requests, que ya importamos, y la función get. A este llamado lo vamos a denominar req de ahora en adelante. También hay que escribir el link apropiado de la web donde vamos a indagar. Además le diremos que traiga solo los recultados con código 200 que son los  satisfactorios.
-
-
+Ahora, es momento de decirle a **jupyter** de dónde obtendrá los resultados que buscamos. Esto lo hacemos con la librería requests, que ya importamos, y [get](https://www.w3schools.com/python/ref_dictionary_get.asp), que devuelve el valor del elemento con la clave especificada, en este caso la clave es la página de resultados de **El País**. A este llamado o acción la vamos a denominar req de ahora en adelante.. Además le diremos que traiga solo los resultados con código 200 que son los  satisfactorios. Así como 404 es una página no encontrada, 200 es una página con resultados satisfactorios.
 
 ```python
 req = requests.get("https://resultados.elpais.com")
@@ -40,8 +59,7 @@ if (req.status_code != 200):
 
 ## BeautifulSoup
 
-Esta libereía nos ayudará a traer, pulir y organizar en una lista los archivos HTML que le indiquemos de la web de El País, en este caso. Con  la ayuda de la función findAll de esta librería traeremos todos los h2 -pues así El País denomina sus titulares- a este documento.
-
+Según [Wikipedia](https://es.wikipedia.org/wiki/Beautiful_Soup),Beautiful Soup es una librería de Python para analizar documentos HTML (incluyendo los que tienen un marcado incorrecto -por eso se especifíca que solo envíe resultados "200"-). Esta biblioteca crea un árbol con todos los elementos del documento y puede ser utilizado para extraer información. Por lo tanto, esta biblioteca es útil para realizar web scraping — extraer información de sitios web. Con la orden 'findAll("h2"), se le está pidiendo que encuentre todos los h2, es decir los titulares de **El País**
 
 ```python
 soup = BeautifulSoup(req.text, 'html.parser')
