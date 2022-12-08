@@ -776,7 +776,7 @@ df_col.info()
     
 
 ## Elaboración del gráfico 
-En este punto vamos a elegir el eje X y Y de nuestro gráfico. Para eso vamos a seleccionar los datos más relevantes: la fecha y el número de casos. Vamos a ubicar la fecha como la columna de control usando la función index para reemplazar a la columna que Pandas ubicó allí por defecto. 
+En este punto vamos a elegir el eje X y Y de nuestro gráfico. Para eso vamos a seleccionar los datos más relevantes: la fecha y el número de casos. Vamos a ubicar la fecha como la columna de control usando la función set_index() para reemplazar a la columna que Pandas ubicó allí por defecto. 
 
 
 ```python
