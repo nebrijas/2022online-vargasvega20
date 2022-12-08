@@ -4,14 +4,16 @@
 
 Este trabajo final consta de la compilación de cuatro actividades que involucran lenguajes de Markdown y Python desde un nivel básico hasta uno avanzado. Repasamos una a una las actividades para conocer cómo fue su proceso. 
 
-El trabajo final, así como las cuatro actividades anteriores, están depositados en GitHub, una plataforma que permite usar lenguajes informáticoas como Markdown
+El trabajo final, así como las cuatro actividades anteriores, están depositados en GitHub, una plataforma que permite usar lenguajes informáticos, más específicamente en un [repositorio](https://github.com/nebrijas/2022online-vargasvega20) dentro del [grupo destinado para esta clase](https://github.com/nebrijas). Crearlo fue muy intuitivo, primero se debe crear sesión en GitHub, después hay que buscar el ícono de + en la esquina superior derecha, ahí se busca la opción nuevo repositorio, ahí podremos nombrar el repositorio y alojarlo dentro del grupo creado para la clase.
+
+La visualización final de las actividades se dará a través de [GitHub Pages](https://nebrijas.github.io/2022online-vargasvega20/), la creación del link también es muy intuitiva, solo basta con cambiar el usuario en la web genérica de GitHub. 
 
 ## [AD1](ad1.md)
 Pese a que, en retrospectiva, esta fue la actividad más sencilla, en su momento fue desafiante. No conocía Markdown y no había escuchado de GitHb, enfrentarme por primera vez a un documento .md fue confuso al principio. La actividad en sí era sencilla: escribir entre 300 y 500 palabras analizando  una pieza de periodismo de datos. Realicé un escrito común y corriente en un archivo de word que después copié y pegué en el [pad](https://pad.riseup.net/p/nebrija-2223-keep) sin ningún tratamiento.
 
 Con el paso de las clases y el aprendizaje del curso fui modificando el archivo poco a poco para que su escritura tuviera más sentido con el formato: añadí el encabezamiento de primer nivel, inserté imagenes y las etiqueté correctamente y fui capaz de hacer un pequeño análisis de los gráficos presentes en el informe [El empleo reflota en octubre: el paro baja en 27.000 personas, la mayor caída en este mes de la historia](https://elpais.com/economia/2022-10-04/el-mercado-laboral-se-enfria-en-septiembre-el-paro-sube-en-18000-personas-con-el-fin-de-los-contratos-de-verano.html) de **El País**, a través de la lectura del código fuente de la página. 
 
-Esta fue una de las actividades, a lo largo de este máster, en las que más pulsé la función de 'Inspeccionar' en una página web. Fue todo un reto aprender a identificar correctamente qué contenedor alojaba el gráfico, lo que al principio creí que era un div resultó siendo un iframe. Aprendí también que si veo el famoso !DOCTYPE en medio del documento y no en la parte inicial como es usual se debe a que hay un elemento embebido. Incluso perfeccioné la técnica de darle click en 'Inspeccionar' justo en el lugar de donde queremos extraer la información. 
+Esta fue una de las actividades, a lo largo de este máster, en las que más pulsé la función de 'Inspeccionar' en una página web. Fue todo un reto aprender a identificar correctamente qué contenedor alojaba el gráfico, lo que al principio creí que era un div resultó siendo un iframe. Aprendí también que si veo el famoso !DOCTYPE en medio del documento y no en la parte inicial como es usual se debe a que hay un elemento embebido que se representa como un iframe. Incluso perfeccioné la técnica de darle click en 'Inspeccionar' justo en el lugar de donde queremos extraer la información. 
 
 Gracias a esta actividad logré familiarizarme más con este lenguaje informático que hace unas pocas semanas no conocía. Si bien estoy consciente de que hay muchos códigos y funciones más que desconozco, ya me siento con la fluidez de producir un documento directamente acá y no pegándolo desde un editor de textos más tradicional como word. 
 
@@ -24,12 +26,11 @@ Algunos de los gráficos en este reportaje son más complejos que otros. Me llam
 
 ![Infografía nombres comunes](https://user-images.githubusercontent.com/118140811/205188928-0f9da747-90b2-4766-babc-f7d07c43da97.png)
 
-
 ## [AD3](ad3.md)
 
 Acá ya entramos un poco más en materia. Para iniciar la AD3 fue necesario descargar **Anaconda**, un software de procesamiento de datos en diferentes lenguajes de programación. Una vez se instaló [correctamente](https://docs.anaconda.com/anaconda/install/windows/) la plataforma, pudimos acceder desde allí a **Jupyter**, una aplicación web que permite generar cuadernos de Python y Markdown. Otro nuevo reto: aprender a manejar Jupyter, sin embargo con el previo conocimiento de **GitHub** y un repaso por el lenguaje de *Python*, fue más sencilla la familiarización. 
 
-En esta primera actividad en Jupyter hicimos un scraping de una web. El resultado mejor posicionado de este término -[Wikipedia](https://es.wikipedia.org/wiki/Web_scraping)- define esta actividad como "una técnica utilizada mediante programas de software para extraer información de sitios web". Muy útil para la investigación de un tema en concreto pues funciona a través de los tags con los que se identifican las noticias. Para este ejercicio en particular hicimos scraping o rascado de **El Páis**
+En esta primera actividad en Jupyter hicimos un scraping de una web. El resultado mejor posicionado de este término -[Wikipedia](https://es.wikipedia.org/wiki/Web_scraping)- define esta actividad como "una técnica utilizada mediante programas de software para extraer información de sitios web". Muy útil para la investigación de un tema en concreto pues funciona a través de los tags con los que se identifican las noticias. Para este ejercicio en particular hicimos scraping o rascado de **El País**
 
 ### Primer paso 
 
@@ -83,7 +84,7 @@ for h2 in tags:
     print(h2.text)
     resultados.append(h2.text)
 ```
-Se repitió el mismo proceso con la seeción de 'Internacional', 'Economía' y 'Deportes'
+Se repitió el mismo proceso con la sección de 'Internacional', 'Economía' y 'Deportes'
 
 
 ## [AD4](ad4.md)
@@ -127,7 +128,7 @@ df = pd.read_json (miurl)
 
 ### Cuarto paso 
 
-Tecnicamente este paso no suma mucho al resultado final, pero es indispensable y no debe ser pasado por alto. Una vez tenemos los datos alojados en un dataframe podemos jugar con ellos, conocerlos, explorarlos. Esto será importante para saber que no hay ningún dato fuera del grupo correspondiente o "dañado", también nos permite conocer nueva información de la data y saber qué hay y con qué podemos trabajar. Se pueden conocer los primeros datos, los últimos o alguno en concreto. Para conocer cómo se puede explorar esta información, visitar la [AD4](ad4.md).
+Técnicamente este paso no suma mucho al resultado final, pero es indispensable y no debe ser pasado por alto. Una vez tenemos los datos alojados en un dataframe podemos jugar con ellos, conocerlos, explorarlos. Esto será importante para saber que no hay ningún dato fuera del grupo correspondiente o "dañado", también nos permitirá conocer nueva información de la data y saber qué hay y con qué podemos trabajar. Se pueden conocer los primeros datos, los últimos o alguno en concreto. Para conocer cómo se puede explorar esta información, visitar la [AD4](ad4.md).
 
 ### Quinto paso 
 
@@ -182,3 +183,7 @@ df_col.set_index('Date')['Cases'].plot(title= "Casos de Covid19 en Colombia")
     
 
 ## Conclusiones 
+
+Con esta materia aprendí a usar nuevas plataformas como GitHub, Anaconda y Jupyter, también conocí más de Python y aprendí sobre Markdown. Además aprendí más sobre códigos de programación que más que servirme para programar una web, me pueden ayudar a obtener datos útiles de otras web. Aprendí una nueva manera de visualizar datos con lenguaje de Python. 
+
+Por mucho tiempo los códigos en la ventana "Inspeccionar" eran como 'chino' para mí, hoy tienen un poco más de sentido, puedo usarlos para diferentes cosas como descargar gráficos o imágenes embebidas. Me llevo de esta clase otra forma de mirar los códigos de programación y los datos. 
