@@ -211,6 +211,8 @@ for h2 in tags:
 
 ## Esto lo podemos replicar en diferentes secciones de El País 
 
+Voy a replicar el mismo ejercicio en las secciones que más frecuento en **El País**. 
+
 ## Internacional 
 
 
