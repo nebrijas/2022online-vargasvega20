@@ -1,7 +1,8 @@
 # Scraping de una web - AD3
 ## Lina Vargas Vega 
+### Máster periodismo digital y de datos 
 
-Máster periodismo digital y de datos 
+Esta actividad consistió en hacer web scraping de **El País**. El también denominado rascado web, es una técnica que permite extraer información de sitios de internet. En el caso puntual de esta actividad vamos a extraer titulares de este medio de comunicación, este será un pequeño paso a paso de este proceso. 
 
 ## Importar librerías 
 
